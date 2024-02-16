@@ -1,0 +1,97 @@
+package a;
+
+import java.util.Scanner;
+public class bai8_oop {
+public static void main(String[] arg) {
+	Scanner a = new Scanner(System.in);
+	int []b= new int [10];
+	for(int i =0;i<10;i++) {
+		b[i]=a.nextInt();
+	}
+	for(int i =0;i<10;i++) {
+		System.out.println(b[i]);
+	}
+	Sinhvien1 minh =new Sinhvien1();
+	minh.setDiachi("vietnam");
+	System.out.println(minh.diachi);
+	Giaovien toan =new Giaovien("toan","vietnam","2002");
+	Hieutruong tuan = new Hieutruong("tuan","vietnam","2000");
+	System.out.println(toan.diachi);
+	System.out.println(tuan.hovaten);
+	tuan.setNhiemky("2002-2006");
+	System.out.println(tuan.nhiemky);
+	minh.setGioitinh("nam");
+	System.out.println(minh.gioitinh);
+	System.out.println(minh.getGioitinh());
+}
+}
+class Hieutruong extends Giaovien {
+	String nhiemky;
+	String truonghoc;
+	
+	public Hieutruong(String hovaten, String diachi, String namsinh) {
+		super(hovaten,diachi,namsinh);
+		
+	}
+
+	public String getNhiemky() {
+		return nhiemky;
+	}
+
+	public void setNhiemky(String nhiemky) {
+		this.nhiemky = nhiemky;
+	}
+
+	public String getTruonghoc() {
+		return truonghoc;
+	}
+
+	public void setTruonghoc(String truonghoc) {
+		this.truonghoc = truonghoc;
+	}
+}
+class Giaovien extends Sinhvien1 {
+	String thanmiencongtac;
+	String monhoc;
+	public Giaovien(String hovaten, String diachi, String namsinh) {
+		
+		super(hovaten,diachi,namsinh);
+	};
+}
+class Sinhvien1{
+	String hovaten;
+	String diachi;
+	String namsinh;
+	String gioitinh;
+	public Sinhvien1(String hovaten, String diachi, String namsinh) {
+		this .hovaten = hovaten;
+		this.diachi= diachi;
+		this.namsinh=namsinh;
+		}
+	public Sinhvien1() {};
+	public String getHovaten() {
+		return hovaten;
+	}
+	public void setHovaten(String hovaten) {
+		this.hovaten = hovaten;
+	}
+	public String getDiachi() {
+		return diachi;
+	}
+	public void setDiachi(String diachi) {
+		this.diachi = diachi;
+	}
+	public String getNamsinh() {
+		return namsinh;
+	}
+	public void setNamsinh(String namsinh) {
+		this.namsinh = namsinh;
+	}
+	public void setGioitinh(String gioitinh) {
+		this.gioitinh=gioitinh;
+	}
+	// khong can ham get chi dung set cung co the lay duoc du lieu
+	public String getGioitinh() {
+		return gioitinh;
+	}
+}
