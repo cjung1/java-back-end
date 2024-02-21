@@ -1,0 +1,63 @@
+package a;
+
+public class bai9 {
+public static void main(String[] arg) {
+	int []b = new int[10];
+	for(int i = 0 ;i<10;i++) {
+		b[i]=i;
+	}
+	for(int i = 0;i<10;i++) {
+		System.out.println(b[i]);
+	}
+	Hieutruong1 tuan = new Hieutruong1();
+	///System.out.println(tuan.print());
+	Giaovien1 a = new Giaovien1();
+	a.print();
+	tuan.print();
+	Sinhvien k = new Sinhvien();
+	k.setTuoi(10);
+	a.setTuoi(20);
+	
+	System.out.println(k.tuoi);
+	System.out.println(a.tuoi);
+	tuan.printf();
+}
+}
+class Hieutruong1 extends Giaovien1{
+	public Hieutruong1() {
+		super();
+		//super.print();
+	}
+	// ghi de lenh print5 duoc ke thua cua class con Giaovien1
+	public void print() {
+		super.print();
+		System.out.println("luong cua hieu truong la 50tr");
+	}
+	
+}
+class Giaovien1 extends Sinhvien {
+	int tuoi;
+	public Giaovien1() {};
+	public void print() {
+		System.out.println("luong cua giao vien la 20tr");
+	}
+	public void setTuoi(int m) {
+		super.setTuoi(m);
+	}
+	public void printf() {
+		System.out.println("helloworld");
+	}
+}
+class Sinhvien{
+	int tuoi;
+	String ten;
+	String diachi;
+	public Sinhvien() {};
+	public int getTuoi() {
+		return tuoi;
+	}
+	public void setTuoi(int tuoi) {
+		this.tuoi= tuoi;
+	}
+	
+}
