@@ -1,0 +1,78 @@
+package a;
+import java.util.Scanner;
+public class bai10 {
+public static void main(String[] args) {
+	Scanner a = new Scanner(System.in);
+	int []b = new int[10];
+/*	for(int i = 0; i<10;i++) {
+		b[i] = a.nextInt();
+	}
+	for(int i = 0;i<10;i++) {
+		System.out.println(b[i]);
+	}*/
+	
+	Giaovien2 hong = new Giaovien2();
+	Hieutruong2 le = new Hieutruong2();
+	String re = hong.nguongoc;
+	System.out.println(re);
+	hong.nhapten();
+	System.out.println(hong.tuoi);
+	hong.setTuoi(10);
+	System.out.println(hong.tuoi);
+	le.setTuoi(8);
+	System.out.println("tuoi cu hieu truong le la " + le.getTuoi());
+	le.namcontac=1;
+	System.out.println("nam cong tac cua le la "+ le.namcontac);
+	String halo = le.loaihoaqua;
+	System.out.println(halo);
+}
+}
+interface hoaqua{
+	String nguongoc = "ameria";
+	String loaihoaqua = "tao";
+	public void nhapten() ;
+}
+interface conbi{
+	String sothich= "dabog";
+	void tinhtong();
+}
+class Hieutruong2 extends Giaovien2  {
+	public Hieutruong2() {
+		super();
+	}
+
+	
+	
+}
+class Giaovien2 implements hoaqua,conbi{
+	Scanner w = new Scanner(System.in);
+	int tuoi;
+	int namcontac;
+	String diachi;
+	String truonghoc;
+	public Giaovien2 () {};
+	void setTuoi(int tuoi) {
+		this.tuoi=tuoi;
+	}
+	int getTuoi() {
+		return tuoi;
+	}
+	public void in() {
+		System.out.println("ten toi la do");
+	}
+	@Override
+	public void nhapten() {
+	diachi = w.nextLine();
+	System.out.println(diachi);
+	tuoi = w.nextInt();
+	
+		
+	}
+	@Override
+	public void tinhtong() {
+		// TODO Auto-generated method stub
+		int tuoi = w.nextInt();
+		
+	}
+	
+}
