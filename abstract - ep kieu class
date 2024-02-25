@@ -1,0 +1,59 @@
+package a;
+
+public class bai11 {
+public static void main(String[] args) {
+	Sinhvien5 linh = new Giaovien5();
+	Student lonh = new Conrua();
+	lonh.gioitinh="nam";
+	System.out.println(lonh.gioitinh);
+	Giaovien5 giaovien = (Giaovien5)linh; // ep kieu khai bao class bang class cha 
+	lonh.th();
+	giaovien.print();
+	giaovien.tuoi=5;
+	System.out.println("tuoi la "+giaovien.tuoi);
+
+}
+}
+interface Hello {
+	int a = 1;
+	void print() ;
+}
+class Conrua extends Student{
+	public Conrua() {
+		//super();
+	};
+	
+}
+class Giaovien5 extends Sinhvien5  implements Hello{
+	String truonghoc;
+	public Giaovien5() {
+		super();
+	}
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		System.out.println("printf hello world");
+	}
+	
+	
+}
+abstract class Sinhvien5{
+	int tuoi;
+	String ten;
+	public Sinhvien5() {
+		
+	};
+	void setTuoi(int tuoi) {
+		this.tuoi=tuoi;
+	}
+	int getTuoi() {
+		return tuoi;
+	}
+}
+class Student{
+	String gioitinh;
+	//public Student() {};
+	void th() {
+		System.out.println("gioitinh");
+	}
+}
