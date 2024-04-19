@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" margin :0% ">
+    <div style = "text-align: right; background-color:white ; padding: 5px,5px,5px,5px"> 
+        <!-- can luu y cua ma mau hex-->
+        <b><h1>hello shopee</h1></b> ,<!-- b giup in dam h1 giup tang co chu h6 la nho nhat h1 la lon nhat-->
+         <h2 style=" colour: red">ten toi la do </h2>
+        <span style =" colour:white "> ten toi la xanh la </span>
+        <!-- the span la de chen them cac hieu ung vao dong text -->
+        </div>
+<div style = "display: flex;"> <!-- cai nay de cho hai div con cung nam trong div cha-->
+        <div style ="text-align: left;width:50%">
+            <a href ="a">  chopee</a>  <!-- href la de tao lien ket tu muc nay den muc khac o trong web-->
+            <a> ken trompet</a>
+            <a> guitar </a>
+
+        </div>
+        <div style = "width : 50%">
+            <span> hello </span>
+        </div>
+    </div>
+</body>
+</html>
