@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table border = "lpx ">
+    <thead>   <!-- trong table khong co head cung duoc -->
+            <th>ten toi la do </th>   
+            <th>nang toc do </th>
+            <th> xa la trong toi </th>
+    </thead>
+    <tbody> <!-- khong co body cung duoc -->
+            <td> 2000 </td>
+            <td> 2014 </td>
+            <td> 2015 </td>
+    </tbody>
+</table>
+<table style = " padding : 100px 100px" border ="lpx">  
+    <tbody >
+        <tr > <!-- the tr la de tao mot hang -->
+           
+            <td width = "600px", style =" font-size: 30px; font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"> 
+                <span style = "color: aqua;">uk</span>
+                <span>hospital</span>
+            </td>  <!-- td la noi dung du lieu-->
+            <td>
+                <br>  <!-- the br la de xuong dong -->
+            </br>
+                <a href ="a" style = "padding :10 px;colour:red">home</span>
+                <a href = "bai1.html" style ="padding: 10px; colour:red">about</span>
+                <a href = "bai1.html">service</span>
+            </td>
+       
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
