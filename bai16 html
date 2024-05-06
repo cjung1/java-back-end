@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style = "position: relative;"> <!-- absolute la de loai bo quan he giua cac cap the, 
+        dung de chen chu vao anh , relative la de chi co quen he, vi du relative o div cha thi co nghia la cac div
+        con phai co quan he voi div cha 
+    -->    <img   style = "object-fit: cover;" width=" 500" ; src="1344616.png" />
+    <div style = "position: absolute; top: 0; "  >
+       
+        <span style =" color: aqua;" > hello world</span>
+    </div>
+    </div>
+    <!-- cac lua chon cua object fit : fill, contain, cover -->
+</body>
+</html>
